@@ -1,4 +1,8 @@
-﻿<p>Server 1 with ID {{ server1Id }} is {{server1Status}}</p>
+<p
+  [ngStyle]="{backgroundColor: getColor()}"
+  [ngClass]="{online: server1Status ==='online'}">
+  {{ 'Server' }} with ID {{ server1Id }} is {{ getServer1Status() }}
+</p>
 <hr>
-<p>Server 2 with ID {{ getServer2Id() }} is {{ getServer2Status() }}</p>
+<p>{{ 'Server' }} with ID {{ server2Id }} is {{ getServer2Status() }}</p>
 <hr>
